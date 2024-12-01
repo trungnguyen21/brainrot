@@ -11,14 +11,12 @@ export const getRandomVideo = (videos: YouTubeVideo[]): YouTubeVideo => {
 
 export const handleWheelAction = (slotIndex: number, videos: YouTubeVideo[], handlers: WheelActionHandlers) => {
   switch (slotIndex) {
-    case 0: // Max Volume
-      // Set system volume to maximum
-      break;
-    case 1: // YouTube
-      const randomVideo = getRandomVideo(videos);
-      handlers.onYouTube(randomVideo);
+    // nobody escapes the brainrot :DD
+    case 2:
       break;
     default:
+      const randomVideo = getRandomVideo(videos);
+      handlers.onYouTube(randomVideo);
       // Empty slots - do nothing
       break;
   }
