@@ -92,7 +92,7 @@ export const YouTubeModal: React.FC<YouTubeModalProps> = ({ videoId, isOpen, onC
         </div>
         {!hasEnded && (
           <p className="text-center mt-4 text-gray-600">
-            Please wait until the video ends to close this window
+            You need to watch the whole video before closing 😈
           </p>
         )}
       </div>
