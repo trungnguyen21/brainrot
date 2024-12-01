@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { Volume2, Youtube, Dice6 } from 'lucide-react';
+import { Skull, ShieldCheck } from 'lucide-react';
 import { WheelSlot } from '../types/wheel';
 
 interface WheelProps {
@@ -13,12 +13,12 @@ export const Wheel: React.FC<WheelProps> = ({ onSpin }) => {
   const previousRotation = useRef(0);
 
   const slots: WheelSlot[] = [
-    { icon: <Dice6 className="w-6 h-6" />, label: "Empty" },
-    { icon: <Youtube className="w-6 h-6" />, label: "YouTube" },
-    { icon: <Dice6 className="w-6 h-6" />, label: "Empty" },
-    { icon: <Youtube className="w-6 h-6" />, label: "YouTube" },
-    { icon: <Dice6 className="w-6 h-6" />, label: "Empty" },
-    { icon: <Youtube className="w-6 h-6" />, label: "YouTube" },
+    { icon: <ShieldCheck className="w-6 h-6" />, label: "Empty" },
+    { icon: <Skull className="w-6 h-6" />, label: "YouTube" },
+    { icon: <ShieldCheck className="w-6 h-6" />, label: "Empty" },
+    { icon: <Skull className="w-6 h-6" />, label: "YouTube" },
+    { icon: <ShieldCheck className="w-6 h-6" />, label: "Empty" },
+    { icon: <Skull className="w-6 h-6" />, label: "YouTube" },
   ];
 
   const spinWheel = () => {
